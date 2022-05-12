@@ -21,6 +21,7 @@ public class Facebook {
 	driver.findElement(By.name("firstname")).sendKeys("Pavitha");
 	driver.findElement(By.name("lastname")).sendKeys("maha");
 	driver.findElement(By.name("reg_email__")).sendKeys("3062002pavitha@gmail.com");
+	driver.findElement(By.name("reg_email_confirmation__")).sendKeys("3062002pavitha@gmail.com");
 	driver.findElement(By.name("reg_passwd__")).sendKeys("athivap");
 	
 	//for Selecting day
