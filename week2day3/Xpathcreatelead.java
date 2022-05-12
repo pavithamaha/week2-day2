@@ -13,8 +13,9 @@ public class Xpathcreatelead {
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxDriver driver=new FirefoxDriver();
 		driver.get("http://leaftaps.com/opentaps/control/main");
+		driver.manage().window().maximize();
 		
-		//loging in
+                //loging in
 		driver.findElement(By.xpath("//input[@id='username']")).sendKeys("demosalesmanager");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("crmsfa");
 		driver.findElement(By.xpath("//input[@class='decorativeSubmit']")).click();
@@ -28,7 +29,7 @@ public class Xpathcreatelead {
 		
 		//creating a lead
 		driver.findElement(By.xpath("//input[@class='smallSubmit']")).click();
-		driver.manage().window().maximize();
+		
 	}
 
 }
